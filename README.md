@@ -16,3 +16,5 @@ for commit in RepositoryMining(".").traverse_commits():
             dictionaries = [json.loads(s) for s in modified_file.source_code.split("\n") if len(s)]
             print([{"date": str(commit.author_date), **d} for d in dictionaries])
 ```
+
+https://github.com/simonw/cdc-vaccination-history/blob/main/build_database.py
